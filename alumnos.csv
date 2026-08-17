@@ -1,0 +1,131 @@
+id_alumno,categoria_edad,colegio,id_grupo,fecha_inscripcion,estado,fecha_baja,motivo_baja
+A0001,Juvenil (10-14),Colegio A,G1,2025-03-15,baja,2025-06-24,Mudanza a otra academia
+A0002,Infantil (5-9),Colegio A,G1,2024-04-17,baja,2024-05-15,Mudanza a otra academia
+A0003,Infantil (5-9),Colegio B,G6,2025-02-23,activo,,
+A0004,Infantil (5-9),Colegio B,G5,2024-07-21,activo,,
+A0005,Infantil (5-9),Colegio A,G2,2025-02-21,activo,,
+A0006,Infantil (5-9),Colegio A,G2,2025-07-04,activo,,
+A0007,Infantil (5-9),Colegio B,G4,2024-04-19,baja,2025-01-02,Mudanza a otra academia
+A0008,Infantil (5-9),Colegio B,G4,2024-04-10,baja,2025-03-07,Desinterés del alumno
+A0009,Juvenil (10-14),Colegio B,G6,2024-04-05,baja,2024-06-03,Conflicto de horario con otra actividad
+A0010,Infantil (5-9),Colegio B,G6,2025-05-02,activo,,
+A0011,Infantil (5-9),Colegio A,G2,2025-02-07,baja,2025-08-06,Costo / situación económica
+A0012,Juvenil (10-14),Colegio A,G2,2024-11-29,activo,,
+A0013,Infantil (5-9),Colegio B,G4,2024-07-17,activo,,
+A0014,Juvenil (10-14),Colegio B,G5,2024-06-21,activo,,
+A0015,Adulto (15+),Colegio A,G1,2024-06-26,activo,,
+A0016,Adulto (15+),Colegio B,G4,2024-07-16,baja,2025-05-17,Desinterés del alumno
+A0017,Infantil (5-9),Colegio B,G4,2024-09-19,activo,,
+A0018,Juvenil (10-14),Colegio A,G2,2024-07-14,baja,2025-04-30,Desinterés del alumno
+A0019,Juvenil (10-14),Colegio B,G4,2025-06-03,activo,,
+A0020,Infantil (5-9),Colegio A,G2,2024-11-16,activo,,
+A0021,Juvenil (10-14),Colegio A,G1,2024-05-18,activo,,
+A0022,Juvenil (10-14),Colegio B,G4,2024-12-31,baja,2025-01-09,Costo / situación económica
+A0023,Juvenil (10-14),Colegio B,G5,2025-03-20,activo,,
+A0024,Juvenil (10-14),Colegio A,G1,2024-07-29,activo,,
+A0025,Juvenil (10-14),Colegio B,G6,2025-05-23,activo,,
+A0026,Adulto (15+),Colegio A,G2,2024-11-15,activo,,
+A0027,Adulto (15+),Colegio A,G3,2025-05-05,activo,,
+A0028,Juvenil (10-14),Colegio A,G2,2024-09-08,activo,,
+A0029,Juvenil (10-14),Colegio B,G5,2025-06-14,baja,2025-06-27,Cambio de ciudad
+A0030,Infantil (5-9),Colegio B,G5,2025-06-28,baja,2025-07-17,Mudanza a otra academia
+A0031,Juvenil (10-14),Colegio A,G2,2025-02-01,activo,,
+A0032,Juvenil (10-14),Colegio A,G3,2024-11-26,activo,,
+A0033,Infantil (5-9),Colegio A,G2,2025-06-19,activo,,
+A0034,Juvenil (10-14),Colegio A,G2,2025-03-01,activo,,
+A0035,Adulto (15+),Colegio B,G6,2024-09-08,activo,,
+A0036,Juvenil (10-14),Colegio A,G1,2024-07-05,baja,2025-01-08,Costo / situación económica
+A0037,Infantil (5-9),Colegio B,G6,2024-03-31,baja,2025-06-29,Desinterés del alumno
+A0038,Infantil (5-9),Colegio A,G2,2024-07-21,activo,,
+A0039,Infantil (5-9),Colegio A,G2,2025-03-06,activo,,
+A0040,Juvenil (10-14),Colegio B,G4,2024-07-03,activo,,
+A0041,Adulto (15+),Colegio A,G2,2024-04-18,baja,2024-12-05,Conflicto de horario con otra actividad
+A0042,Juvenil (10-14),Colegio B,G6,2024-03-28,activo,,
+A0043,Adulto (15+),Colegio A,G1,2024-04-01,activo,,
+A0044,Infantil (5-9),Colegio A,G1,2024-07-06,baja,2024-09-30,Conflicto de horario con otra actividad
+A0045,Infantil (5-9),Colegio B,G4,2024-07-06,activo,,
+A0046,Infantil (5-9),Colegio B,G5,2024-04-20,baja,2025-07-07,Costo / situación económica
+A0047,Adulto (15+),Colegio A,G2,2024-05-25,activo,,
+A0048,Juvenil (10-14),Colegio B,G4,2025-06-06,baja,2025-06-26,Desinterés del alumno
+A0049,Infantil (5-9),Colegio B,G6,2025-04-06,activo,,
+A0050,Juvenil (10-14),Colegio A,G2,2024-06-06,activo,,
+A0051,Adulto (15+),Colegio B,G5,2025-03-12,activo,,
+A0052,Juvenil (10-14),Colegio A,G1,2024-03-26,activo,,
+A0053,Juvenil (10-14),Colegio B,G5,2024-05-20,baja,2025-08-13,Cambio de ciudad
+A0054,Infantil (5-9),Colegio A,G1,2025-02-09,activo,,
+A0055,Infantil (5-9),Colegio B,G5,2024-07-05,activo,,
+A0056,Infantil (5-9),Colegio A,G1,2024-10-01,activo,,
+A0057,Juvenil (10-14),Colegio A,G3,2025-06-22,activo,,
+A0058,Juvenil (10-14),Colegio A,G3,2024-07-01,activo,,
+A0059,Infantil (5-9),Colegio B,G6,2024-08-01,activo,,
+A0060,Adulto (15+),Colegio A,G1,2024-03-05,activo,,
+A0061,Adulto (15+),Colegio A,G1,2024-04-07,activo,,
+A0062,Juvenil (10-14),Colegio A,G2,2025-06-21,activo,,
+A0063,Infantil (5-9),Colegio A,G2,2024-09-06,baja,2025-06-26,Desinterés del alumno
+A0064,Juvenil (10-14),Colegio B,G6,2024-11-26,baja,2025-02-25,Costo / situación económica
+A0065,Adulto (15+),Colegio A,G2,2024-07-14,baja,2025-01-09,Desinterés del alumno
+A0066,Infantil (5-9),Colegio B,G6,2025-05-11,baja,2025-06-01,Costo / situación económica
+A0067,Juvenil (10-14),Colegio A,G3,2024-03-23,baja,2025-02-27,Desinterés del alumno
+A0068,Infantil (5-9),Colegio B,G4,2024-12-08,activo,,
+A0069,Juvenil (10-14),Colegio A,G1,2024-04-08,activo,,
+A0070,Juvenil (10-14),Colegio A,G2,2024-12-05,baja,2025-01-14,Desinterés del alumno
+A0071,Infantil (5-9),Colegio A,G1,2025-06-04,baja,2025-07-31,Costo / situación económica
+A0072,Infantil (5-9),Colegio B,G5,2025-05-27,activo,,
+A0073,Adulto (15+),Colegio B,G6,2024-05-19,activo,,
+A0074,Infantil (5-9),Colegio A,G2,2025-07-13,activo,,
+A0075,Infantil (5-9),Colegio B,G4,2024-03-13,baja,2025-05-02,Conflicto de horario con otra actividad
+A0076,Adulto (15+),Colegio B,G6,2025-04-20,activo,,
+A0077,Infantil (5-9),Colegio B,G6,2024-04-25,activo,,
+A0078,Infantil (5-9),Colegio B,G4,2024-06-22,baja,2025-01-02,Desinterés del alumno
+A0079,Adulto (15+),Colegio A,G2,2024-06-23,baja,2025-06-03,Desinterés del alumno
+A0080,Juvenil (10-14),Colegio B,G4,2025-02-11,activo,,
+A0081,Juvenil (10-14),Colegio A,G1,2024-04-29,activo,,
+A0082,Infantil (5-9),Colegio B,G5,2025-07-06,activo,,
+A0083,Infantil (5-9),Colegio B,G5,2024-10-09,activo,,
+A0084,Juvenil (10-14),Colegio B,G4,2025-01-05,activo,,
+A0085,Infantil (5-9),Colegio B,G5,2024-06-06,baja,2024-06-21,Mudanza a otra academia
+A0086,Adulto (15+),Colegio B,G5,2025-02-15,activo,,
+A0087,Juvenil (10-14),Colegio B,G6,2024-06-09,activo,,
+A0088,Infantil (5-9),Colegio B,G6,2025-06-15,baja,2025-08-01,Desinterés del alumno
+A0089,Juvenil (10-14),Colegio A,G3,2024-09-23,activo,,
+A0090,Juvenil (10-14),Colegio A,G2,2024-10-02,activo,,
+A0091,Infantil (5-9),Colegio B,G6,2025-06-06,baja,2025-07-16,Mudanza a otra academia
+A0092,Adulto (15+),Colegio A,G3,2024-07-25,activo,,
+A0093,Juvenil (10-14),Colegio B,G5,2025-01-30,activo,,
+A0094,Infantil (5-9),Colegio B,G6,2024-06-18,activo,,
+A0095,Juvenil (10-14),Colegio B,G6,2024-05-26,activo,,
+A0096,Infantil (5-9),Colegio B,G6,2025-01-19,activo,,
+A0097,Infantil (5-9),Colegio A,G2,2025-02-08,baja,2025-04-01,Costo / situación económica
+A0098,Infantil (5-9),Colegio B,G4,2025-01-07,activo,,
+A0099,Infantil (5-9),Colegio B,G4,2025-05-28,activo,,
+A0100,Infantil (5-9),Colegio B,G6,2024-09-13,activo,,
+A0101,Infantil (5-9),Colegio B,G6,2025-02-16,baja,2025-03-30,Conflicto de horario con otra actividad
+A0102,Infantil (5-9),Colegio B,G6,2024-11-21,activo,,
+A0103,Juvenil (10-14),Colegio A,G1,2024-10-20,baja,2025-08-02,Mudanza a otra academia
+A0104,Juvenil (10-14),Colegio B,G4,2025-01-08,activo,,
+A0105,Adulto (15+),Colegio B,G4,2025-04-30,activo,,
+A0106,Infantil (5-9),Colegio A,G2,2025-03-16,activo,,
+A0107,Juvenil (10-14),Colegio A,G2,2025-05-05,activo,,
+A0108,Juvenil (10-14),Colegio B,G5,2024-11-04,activo,,
+A0109,Infantil (5-9),Colegio A,G1,2025-03-01,baja,2025-06-05,Cambio de ciudad
+A0110,Infantil (5-9),Colegio A,G2,2025-02-25,baja,2025-06-04,Mudanza a otra academia
+A0111,Juvenil (10-14),Colegio A,G1,2024-06-14,activo,,
+A0112,Infantil (5-9),Colegio B,G5,2025-06-28,activo,,
+A0113,Adulto (15+),Colegio B,G5,2024-09-11,activo,,
+A0114,Adulto (15+),Colegio A,G3,2025-03-21,activo,,
+A0115,Adulto (15+),Colegio B,G4,2024-12-01,activo,,
+A0116,Juvenil (10-14),Colegio B,G5,2025-06-03,activo,,
+A0117,Infantil (5-9),Colegio B,G4,2024-11-04,baja,2025-01-13,Conflicto de horario con otra actividad
+A0118,Adulto (15+),Colegio B,G5,2024-11-29,baja,2025-06-03,Cambio de ciudad
+A0119,Adulto (15+),Colegio A,G2,2024-03-26,activo,,
+A0120,Infantil (5-9),Colegio B,G4,2024-08-15,baja,2025-01-19,Conflicto de horario con otra actividad
+A0121,Infantil (5-9),Colegio A,G1,2024-10-27,baja,2025-05-09,Cambio de ciudad
+A0122,Juvenil (10-14),Colegio B,G6,2024-03-21,activo,,
+A0123,Adulto (15+),Colegio A,G2,2025-05-04,baja,2025-06-04,Conflicto de horario con otra actividad
+A0124,Juvenil (10-14),Colegio A,G3,2024-05-25,activo,,
+A0125,Adulto (15+),Colegio B,G6,2024-04-28,activo,,
+A0126,Infantil (5-9),Colegio A,G3,2024-04-25,activo,,
+A0127,Adulto (15+),Colegio B,G5,2025-02-10,activo,,
+A0128,Infantil (5-9),Colegio B,G6,2024-06-10,baja,2025-05-12,Cambio de ciudad
+A0129,Infantil (5-9),Colegio A,G3,2025-05-10,activo,,
+A0130,Adulto (15+),Colegio B,G5,2025-04-05,baja,2025-07-13,Desinterés del alumno

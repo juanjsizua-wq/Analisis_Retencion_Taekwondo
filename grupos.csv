@@ -1,0 +1,7 @@
+id_grupo,colegio,dia_horario,instructor,capacidad_maxima
+G1,Colegio A,Lun-Mie 4:00pm,Juan S.,20
+G2,Colegio A,Lun-Mie 6:00pm,Juan S.,20
+G3,Colegio A,Sabado 10:00am,Juan S.,25
+G4,Colegio B,Mar-Jue 4:00pm,Juan S.,20
+G5,Colegio B,Mar-Jue 6:00pm,Juan S.,20
+G6,Colegio B,Sabado 11:00am,Juan S.,25
