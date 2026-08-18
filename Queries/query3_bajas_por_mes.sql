@@ -1,8 +1,9 @@
 /*
 ================================================================
 ANÁLISIS ESTRATÉGICO DE ESTACIONALIDAD DE BAJAS
-Fecha: 24 de Mayo, 2024
-Autor: [Tu Nombre]
+Fecha: 18 de Agosto, 2026
+Autor: Juan Jesus Sifuentes
+Descripción: Identificación de los meses con mayor riesgo de deserción.
 Resultados obtenidos: Junio (13), Enero (8), Julio/Mayo (5)...
 ================================================================
 */
