@@ -1,54 +1,117 @@
-# Analisis_Retencion_Taekwondo
-Análisis de retención de alumnos en academia de Taekwondo usando SQL — datos simulados con esquema relacional (Star Schema)
-# 📊 Análisis de Retención y Deserción de Alumnos
+# 🥋 Análisis de Retención de Alumnos — Academia de Taekwondo
 
-## 🎯 El Problema: ¿Por qué importa la retención?
-Para una institución educativa, la retención de alumnos es el indicador más crítico de salud operativa. Una baja tasa de retención no solo afecta los ingresos, sino que incrementa los costos de adquisición de nuevos alumnos y rompe la continuidad pedagógica de los grupos. 
+Proyecto de portafolio de Análisis de Datos: identifico patrones de retención y abandono
+de alumnos en una academia de Taekwondo usando SQL, Python y visualización de datos.
 
-Este análisis busca identificar los **patrones de abandono** para transformar datos históricos en estrategias preventivas que aseguren la estabilidad de la academia.
-
----
-
-## 🔍 Preguntas de Negocio
-Para entender el fenómeno de la deserción, este análisis responde a cuatro preguntas clave:
-1. **¿Qué tan rápido perdemos a los alumnos?** (Periodo crítico de 90 días).
-2. **¿Qué grupos y horarios presentan mayor riesgo?** (Análisis por sede y horario).
-3. **¿Existe una estacionalidad en las bajas?** (Meses con mayor índice de fuga).
-4. **¿Podemos predecir una baja antes de que ocurra?** (Correlación entre asistencia y deserción).
+> **Nota sobre los datos**: para proteger la privacidad de menores de edad, este proyecto
+> usa datos **simulados** que replican patrones realistas de una academia real (basados
+> en mi experiencia de 10 años como instructor), no información de alumnos reales.
 
 ---
 
-## 📈 Hallazgos Clave
+## 📌 El problema
 
-### 1. Clasificación del "Churn" (Bajas Tempranas vs. Tardías)
-Se analizó el tiempo transcurrido entre la inscripción y la baja, utilizando un umbral de 90 días para identificar problemas de adaptación inicial.
-*   **Hallazgo:** La segmentación permite identificar si el problema radica en el proceso de bienvenida (*onboarding*) o en el desgaste a largo plazo del contenido académico.
-
-### 2. Rendimiento por Grupo y Sede
-Cruzamos el estado de los alumnos con su asignación de grupo para medir el porcentaje de retención real.
-*   **Hallazgo:** El grupo de **Sábados 10:00 AM (Colegio A)** lidera la retención con un **90.9%**. En contraste, los horarios de las **4:00 PM** en ambas sedes muestran una retención crítica de apenas el **60%**, siendo el punto de mayor vulnerabilidad.
-
-### 3. Análisis de Estacionalidad
-Se extrajo el mes de cada baja para identificar picos de deserción durante el año natural.
-*   **Hallazgo:** **Junio** es el mes con mayor volumen de bajas (13), seguido de **Enero** (8). Esto sugiere una dependencia directa del calendario escolar y de los periodos de ajustes económicos familiares.
-
-### 4. El Indicador Predictivo: Asistencia
-Comparamos la asistencia histórica del alumno contra su comportamiento en las últimas 4 semanas antes de abandonar.
-*   **Hallazgo:** Un alumno que se dará de baja reduce su asistencia del **83% al 45.7%** un mes antes de formalizar su salida. **La inasistencia es el síntoma principal y nos otorga una ventana de intervención de 28 días.**
+Como instructor de Taekwondo, una de las preguntas más importantes para el negocio es:
+**¿por qué se van los alumnos, y se puede anticipar?** Este proyecto usa datos de
+inscripciones, asistencia y pagos para responder esa pregunta con evidencia, no solo
+intuición.
 
 ---
 
-## 💡 Conclusiones Accionables
+## 🗂️ Estructura de los datos
 
-Basado en la evidencia obtenida mediante SQL, se proponen las siguientes acciones:
+El dataset sigue un esquema relacional (Star Schema) con 6 tablas:
 
-1.  **Protocolo de Alerta Roja:** Activar un contacto inmediato de "recuperación" cuando la asistencia mensual de un alumno caiga por debajo del 60%. Es posible salvar casi al 50% de los desertores si se interviene en este periodo.
-2.  **Blindaje de Temporada Alta:** Implementar campañas de lealtad o beneficios de reinscripción en **Mayo y Diciembre** para mitigar las fugas masivas de Junio y Enero.
-3.  **Revisión del Bloque de las 4:00 PM:** Evaluar si el bajo rendimiento en este horario se debe a fatiga escolar o factores logísticos, considerando mover la oferta académica hacia las 6:00 PM, donde los datos muestran una retención más sólida.
-4.  **Refuerzo en los primeros 90 días:** Establecer entrevistas de seguimiento al finalizar el primer y segundo mes para asegurar que el alumno supere la etapa de "Baja Temprana".
+| Tabla | Tipo | Descripción |
+|---|---|---|
+| `alumnos` | Dimensión | Un registro por alumno: inscripción, estado, baja |
+| `grupos` | Dimensión | Catálogo de horarios y colegios |
+| `torneos` | Dimensión | Catálogo de eventos/torneos |
+| `asistencia` | Hechos | Un registro por clase por alumno |
+| `mensualidades` | Hechos | Historial de pagos |
+| `participacion_torneos` | Hechos | Qué alumno fue a qué torneo |
 
 ---
 
-## 🛠️ Tecnologías y Metodología
-*   **SQL (SQLite):** Consultas avanzadas utilizando `strftime`, `julianday`, subconsultas y lógica condicional `CASE`.
-*   **Análisis de Datos:** Enfoque en métricas de retención (*Retention Rate*) y tasa de cancelación (*Churn Rate*).
+## 🛠️ Metodología
+
+1. **Generación de datos simulados** con Python (`generar_datos.py`), respetando
+   relaciones y patrones realistas
+2. **Carga a SQLite** (`cargar_db.py`) para consultar con SQL
+3. **4 preguntas de negocio** respondidas con queries SQL (carpeta `/queries`)
+4. **Visualización** de resultados con Python/matplotlib (`generar_graficas.py`)
+5. Pipeline automatizado (`correr_queries.py` + `generar_graficas_auto.py`) para agregar
+   preguntas nuevas sin repetir trabajo manual
+
+---
+
+## 📊 Hallazgos principales
+
+### 1. El 39.5% de las bajas ocurren en los primeros 3 meses
+
+![Bajas tempranas](Visualizaciones/grafica1_bajas_tempranas.png)
+
+Casi 4 de cada 10 alumnos que se dan de baja lo hacen antes de cumplir 90 días.
+**Recomendación**: seguimiento activo con los padres en las primeras 4-8 semanas, el
+periodo de mayor riesgo.
+
+### 2. Los horarios de 4:00pm retienen 30 puntos menos que los sábados
+
+![Retención por horario](Visualizaciones/grafica2_retencion_por_grupo.png)
+
+Sábado 10am tiene 90.9% de retención vs. 59-60% en los horarios de 4pm entre semana,
+probablemente por cansancio tras la jornada escolar. **Recomendación**: evaluar mover
+grupos de 4pm a horarios posteriores cuando sea operativamente posible.
+
+### 3. Enero y junio concentran más bajas
+
+![Bajas por mes](Visualizaciones/grafica3_bajas_por_mes.png)
+
+Coincide con el regreso de vacaciones de invierno y el fin de ciclo escolar.
+**Recomendación**: campañas de recordatorio/reinscripción 2 semanas antes de estos
+periodos, en vez de reaccionar después.
+
+### 4. La asistencia cae antes de una baja — señal de alerta temprana
+
+![Asistencia antes de baja](Visualizaciones/grafica4_asistencia_antes_de_baja.png)
+
+En las últimas 4 semanas antes de darse de baja, la asistencia cae de forma marcada.
+Esto convierte la asistencia en un **indicador predictivo**, no solo descriptivo.
+**Recomendación**: un sistema de alerta simple (2+ faltas en 2 semanas → contacto
+directo) podría anticipar bajas antes de que ocurran.
+
+📄 **Ver análisis completo con contexto y recomendaciones detalladas**:
+[insights/hallazgos_y_recomendaciones.md](insights/hallazgos_y_recomendaciones.md)
+
+---
+
+## 📁 Estructura del repositorio
+
+```
+analisis-retencion-taekwondo/
+├── README.md
+├── generar_datos.py              # genera los datos simulados
+├── cargar_db.py                  # carga los CSV a SQLite
+├── correr_queries.py             # corre automáticamente todas las queries
+├── generar_graficas.py           # gráficas principales (4 hallazgos)
+├── generar_graficas_auto.py      # gráficas automáticas para queries nuevas
+├── taekwondo.db
+├── data/                         # datos simulados (6 tablas)
+├── queries/                      # archivos .sql de cada pregunta
+├── resultados/                   # resultados de cada query en CSV
+├── Visualizaciones/              # gráficas en PNG
+└── insights/                     # análisis extendido con recomendaciones
+```
+
+---
+
+## 🧰 Herramientas usadas
+
+SQL (SQLite) · Python (pandas, matplotlib) · Modelado relacional (Star Schema) · Git/GitHub
+
+---
+
+## 📫 Contacto
+
+- LinkedIn: [https://www.linkedin.com/in/juan-jesus-sifuentes-zuazua-a8600a240/]
+- GitHub: [github.com/juanjsizua-wq](https://github.com/juanjsizua-wq)
