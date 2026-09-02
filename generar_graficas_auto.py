@@ -233,11 +233,10 @@ def main():
         numero_query, titulo_base = titular(nombre_base)
 
         if nombre_base == "query1_bajas_tempranas":
-            fig, ax = plt.subplots(figsize=(7.5, 5.2))
+            fig, ax = plt.subplots(figsize=(7.5, 5.8))
             colores = [COLOR_ALERTA, COLOR_BUENO][:len(df_ordenado)]
             wedges, texts, autotexts = ax.pie(
                 df_ordenado[col_valor],
-                labels=df_ordenado["_etiqueta"].astype(str),
                 autopct=lambda pct: f"{pct:.1f}%",
                 startangle=90,
                 colors=colores,
@@ -248,6 +247,15 @@ def main():
                 autotext.set_color("#222222")
             ax.set_aspect("equal")
             ax.set_title(f"{numero_query}. {titulo_base}", fontsize=14, fontweight="bold", pad=15)
+            ax.legend(
+                wedges,
+                df_ordenado["_etiqueta"].astype(str),
+                loc="upper center",
+                bbox_to_anchor=(0.5, -0.04),
+                ncol=1,
+                frameon=False,
+                fontsize=10,
+            )
         elif nombre_base == "query2_retencion_por_grupo":
             fig, ax = plt.subplots(figsize=(9, 6))
             colores = color_por_valor(df_ordenado[col_valor])
