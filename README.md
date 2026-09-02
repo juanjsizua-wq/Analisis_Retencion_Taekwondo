@@ -49,7 +49,7 @@ El dataset sigue un esquema relacional (Star Schema) con 6 tablas:
 
 ### 1. El 39.5% de las bajas ocurren en los primeros 3 meses
 
-![Bajas tempranas](Visualizaciones/grafica1_bajas_tempranas.png)
+![Bajas tempranas](Visualizaciones/grafica1_bajas_tempranas.png?v=ea6106a)
 
 Casi 4 de cada 10 alumnos que se dan de baja lo hacen antes de cumplir 90 días.
 **Recomendación**: seguimiento activo con los padres en las primeras 4-8 semanas, el
